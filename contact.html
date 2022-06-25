@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Cycarts | Contact</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* overflow: hidden; */
+        font-family: "Nunito Sans", sans-serif;
+      }
+
+      nav {
+        display: block;
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(70, 18, 194);
+      }
+
+      .logo img {
+        height: 7vh;
+        margin-top: 2vh;
+        margin-right: 1vw;
+      }
+
+      .child_1 nav ul li {
+        list-style: none;
+        color: white;
+      }
+
+      .link li a {
+        list-style: none;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        margin-left: 30px;
+      }
+
+      .link {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .child_1 .link li {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .link {
+        margin-top: 3vh;
+      }
+
+      .search {
+        margin-top: 2vh;
+        margin-right: 2vw;
+      }
+
+      .search form input {
+        height: 6vh;
+        width: 20vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+      }
+
+      .search form button {
+        height: 6vh;
+        width: 12vh;
+        border: 1px solid white;
+        background-color: transparent;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .search form button:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid rgb(0, 0, 0);
+      }
+
+      .child_4 button:hover {
+        color: black;
+        border: 1px solid black;
+        background-color: white;
+      }
+
+      #yu:hover {
+        border: 1px solid rgb(0, 0, 0);
+        color: rgb(211, 0, 0);
+        background-color: black;
+      }
+
+      .fg {
+        display: flex;
+        width: 30vw;
+        height: 80vh;
+        background-color: white;
+        margin-top: 60px;
+        border: 1px solid white;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .rsp {
+        display: none;
+      }
+
+      .ghu {
+        width: 20vw;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        padding-left: 5px;
+      }
+
+      @media screen and (max-width: 1150px) {
+        .fg {
+          width: 40vw;
+          margin-top: 100px;
+          height: 500px;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .child_1 {
+          display: none;
+        }
+
+        .rsp {
+          display: block;
+        }
+      }
+      #line {
+        width: 50px;
+        height: 3px;
+        background-color: black;
+        position: relative;
+        right: 50px;
+        top: 30px;
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="rsp">
+      <nav
+        class="navbar fixed-top"
+        style="background-color: rgb(70, 18, 194); height: 13vh"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="logo.png" alt="" style="width: 100px; margin-top: 0px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            style="background-color: rgb(112, 51, 255)"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="logo.png" style="width: 25vw" alt="" />
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+              </ul>
+              <form class="d-flex" style="margin-top: 10px" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-light" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="child_1">
+      <nav style="position: fixed; z-index: 4">
+        <ul>
+          <div class="logo">
+            <li>
+              <a href="index.html"><img src="logo.png" alt="" /></a>
+            </li>
+          </div>
+          <div class="link" style="margin-right: 20px">
+            <li><a href="index.html">Home</a></li>
+            <span id="line"></span>
+            <li><a href="about.html">About</a></li>
+            <span id="line"></span>
+            <li><a href="contact.html">Contact</a></li>
+            <span id="line"></span>
+            <li><a href="blog.html">Blog</a></li>
+            <span id="line"></span>
+          </div>
+        </ul>
+      </nav>
+    </div>
+    <div
+      class="ctb"
+      style="
+        width: 100vw;
+        height: 100vh;
+        background-image: url(https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      "
+    >
+      <div class="fg">
+        <form
+          id="gh"
+          action="index.html"
+          style="display: flex; flex-direction: column; justify-content: center"
+        >
+          <input class="ghu" type="text" placeholder="Name" />
+          <input class="ghu" type="email" placeholder="E-mail" />
+          <input class="ghu" type="number" placeholder="Age" />
+          <textarea
+            style="
+              width: 20vw;
+              margin-bottom: 10px;
+              border-radius: 3px;
+              padding-left: 5px;
+            "
+            name=""
+            id=""
+            placeholder="Describe"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="child_5"
+      style="
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        background-color: rgb(37, 0, 138);
+        color: white;
+        margin-top: 0;
+      "
+    >
+      <h5 style="position: relative; top: 20px">
+        Copyright &copy; Cycarts 2022 |
+      </h5>
+      <h6 style="margin: 20px; margin-top: 35px">We are trusted By</h6>
+      <a href="//visa.com" target="_blank"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png"
+          style="height: 5vh"
+          alt=""
+      /></a>
+      <a href="//paypal.com" target="_blank"
+        ><img
+          src="https://www.newspaper.com.pk/wp-content/uploads/2022/01/paypal.png"
+          style="height: 5vh"
+          alt=""
+      /></a>
+      <a href="//payoneer.pk" target="_blank">
+        <img
+          src="https://www.freedomsurfer.com/wp-content/uploads/2017/10/payoneerlogo.jpg"
+          style="height: 5vh"
+          alt=""
+      /></a>
+      <a
+        href="#"
+        style="text-decoration: none; color: white; margin-left: 10px"
+      >
+        Back To Top &uarr;</a
+      >
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

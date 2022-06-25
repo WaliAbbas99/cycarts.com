@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cycarts | About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          /* overflow: hidden; */
+           font-family: 'Nunito Sans', sans-serif;
+        }
+        nav {
+          display: block;
+          width: 100%;
+          height: 10vh;
+          background-color: rgb(70, 18, 194);
+        }
+        .logo img {
+          height: 7vh;
+          margin-top: 2vh;
+          margin-right: 1vw;
+        }
+        .child_1 nav ul li {
+          list-style: none;
+          color: white;
+        }
+        .link li a {
+          list-style: none;
+          text-decoration: none;
+          color: rgb(255, 255, 255);
+          margin-left: 30px;
+        }
+        .link {
+          display: flex;
+          flex-direction: row;
+          
+        }
+        .child_1 .link li {
+          display: flex;
+          display: block;
+          justify-content: space-between;
+          flex-direction: row;
+        }
+        ul{
+          display: flex;
+          justify-content: space-between;
+        }
+        .link {
+          margin-top: 3vh;
+        }
+        .search {
+          margin-top: 2vh;
+          margin-right: 2vw;
+        }
+        .search form input {
+          height: 6vh;
+          width: 20vw;
+          padding-left: 1vw;
+          padding-right: 1vw;
+        }
+        .search form button {
+          height: 6vh;
+          width: 12vh;
+          border: 1px solid white;
+          background-color: transparent;
+          color: white;
+          border-radius: 5px;
+        }
+        .search form button:hover {
+          background-color: white;
+          color: black;
+          border: 1px solid rgb(0, 0, 0);
+  
+        }
+        .child_4 button:hover{
+          color: black;
+          border: 1px solid black;
+          background-color: white;
+        }
+        .child_5 {
+          display: flex;
+          display: block;
+        }
+        .hui {
+          display: flex;
+          display: block;
+        }
+        .rsp  {
+          display: none;
+        }
+        @media screen and (max-width : 700px) {
+          .col-md-4 {
+            display: none;
+          }
+          .col-md-8{
+            width: 100vw;
+          }
+          .child_5 {
+            display: none;
+          }
+          .hui {
+            display: none;
+          }
+          .rsp {
+            display: block;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="parent">
+        <div class="rsp">
+          <nav class="navbar fixed-top" style="background-color: rgb(70, 18, 194); height: 13vh;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="width: 100px; margin-top: 0px;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end"  style="background-color: rgb(112, 51, 255);" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="logo.png" style="width: 25vw;" alt=""></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" style="margin-top: 10px;" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="child_1">
+          <nav class="hui" style="position: fixed; z-index: 4;">
+              <ul>
+              <div class="logo">
+                <li><a href="index.html"><img src="logo.png" alt=""></a></li>
+            </div>
+                  <div class="link" style="margin-right: 20px;">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                  </div>
+                 
+              </ul>
+          </nav>
+        </div>
+        <div class="card mb-3" style="max-width: 100vw; height: 450; border-radius: 0px;">
+          <div class="row g-0">
+            
+            <div class="col-md-8">
+              <div class="card-body" style=" margin-top: 0px; color: white;
+              padding: 5vh; padding-top: 20vh; color:  black;">
+                <h5 class="card-title" style="font-size: xx-large;">About us!</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta eaque dolore eligendi nihil odit iure nesciunt maxime qui sapiente minus suscipit, facilis omnis autem magnam reiciendis, dolores ipsum? Minus corporis assumenda vel! Eum asperiores fugit quidem corporis quis sed esse!</p>
+                <p class="card-text"><small style="color: rgb(51, 51, 51); font-size: medium;">Presented by Cycarts</small></p>
+              </div>
+            </div>
+            <div class="col-md-4" style="border-radius: 0px; height: 90vh; ">
+              <img  style="border-radius: 0px; padding-top: 200px; height: 80vh;" src="Mobile-Perspective-Mockup-3-1145x800.webp" class="img-fluid rounded-start" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="pro" style="display: flex; justify-content: space-between; margin: 40px; flex-wrap: wrap; align-items: center; justify-content: center;">
+          <div style="margin-right: 50px;">
+            <img src="download-removebg-preview (7).png" style="border: 1px solid transparent; border-radius: 1000px;
+            " alt="">
+            <h3 style="margin-left: 60px;">Jow Smit</h3>
+            <h5 style="margin-left: 50px;">Ceo | Founder</h5>
+          </div>
+          <div style="margin-right: 50px;">
+            <img src="download-removebg-preview (7).png" style="border: 1px solid transparent; border-radius: 1000px;" alt="">
+            <h3 style="margin-left: 40px;">Carolina Emily</h3>
+            <h5 style="margin-left: 40px;">Digital Marketer</h5>
+          </div>
+          <div style="margin-right: 50px;">
+            <img src="download-removebg-preview (7).png" style="border: 1px solid transparent; border-radius: 1000px;" alt="">
+            <h3 style="margin-left: 60px;">Abs Shibam</h3>
+            <h5 style="margin-left: 30px;">Graphic Designer</h5>
+          </div>
+          <div style="margin-right: 50px;">
+            <img src="download-removebg-preview (7).png" style="border: 1px solid transparent; border-radius: 1000px;" alt="">
+            <h3 style="margin-left: 50px;">James Gant</h3>
+            <h5 style="margin-left: 60px;">Programmer</h5>
+          </div>
+        </div>
+        <div class="child_6" style="width: 100%; height: 30vh; text-align: center; flex-direction: column; align-items: center; margin-top: 20px; background-color: rgb(37, 0, 138); color: white; margin-top: 0;">
+          <h5 style="position: relative; top: 20px;">Copyright &copy; Cycarts 2022 |</h5> 
+          <h6 style="margin: 20px; margin-top: 35px;">We are trusted By</h6>
+          <a href="//visa.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Visa.svg/1200px-Visa.svg.png" style="height: 5vh;" alt=""></a>
+          <a href="//paypal.com" target="_blank"><img src="https://www.newspaper.com.pk/wp-content/uploads/2022/01/paypal.png" style="height: 5vh;" alt=""></a>
+         <a href="//payoneer.pk" target="_blank"> <img src="https://www.freedomsurfer.com/wp-content/uploads/2017/10/payoneerlogo.jpg" style="height: 5vh;" alt=""></a>
+         <a href="#" style="text-decoration: none; color: white;margin-left: 10px;">  Back To Top &uarr;</a>  
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
